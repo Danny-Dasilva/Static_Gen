@@ -7,7 +7,7 @@ template = template_env.get_template('layout.html')
 
 with open('article.md') as markdown_file:
     article = markdown(markdown_file.read(),
-    extras=['fenced-code-blocks', 'code-friendly'])
+    extras=['fenced-code-blocks', 'code-friendly',])
 
 with open('config.json') as config_file:
     config = load(config_file)
