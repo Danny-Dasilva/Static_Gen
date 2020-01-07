@@ -22,7 +22,17 @@
     console.log(c)
     for (i = 0; i < c.length; i++) {
         c[i].classList.add('language-python');
+        c[i].setAttribute("data-start", "-5"); 
       } 
+      var c = document.querySelectorAll("pre")
+      console.log(c)
+      for (i = 0; i < c.length; i++) {
+        c[i].classList.add('line-numbers');
+        //  c[i].setAttribute("data-start", "-5"); 
+        } 
+   
+
+
 
 </script>
 

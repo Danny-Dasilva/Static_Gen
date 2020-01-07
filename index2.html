@@ -28,18 +28,24 @@ def test(hello):
     <script src="prism.js"></script>
 
 
-<div class="MyElement" id="MyElement"></div>
-<div class="MyElement" id="MyElement"></div>
-<div class="MyElement" id="MyElement"></div>
-<div class="MyElement" id="MyElement"></div>
-<div class="MyElement" id="MyElement"></div>
+
 <script>
     //document.getElementsByClassName("MyElement").className += " MyClass";
     var c = document.querySelectorAll(".python")
     console.log(c)
     for (i = 0; i < c.length; i++) {
         c[i].classList.add('language-python');
+        c[i].setAttribute("data-start", "-5"); 
       } 
+      var c = document.querySelectorAll("pre")
+      console.log(c)
+      for (i = 0; i < c.length; i++) {
+        c[i].classList.add('line-numbers');
+        //  c[i].setAttribute("data-start", "-5"); 
+        } 
+   
+
+
 
 </script>
 
